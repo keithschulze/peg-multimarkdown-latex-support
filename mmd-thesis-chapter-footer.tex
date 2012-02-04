@@ -1,0 +1,11 @@
+% Bibliography
+\ifx\bibliostyle\undefined
+\else
+    \def\bibliostyle{plain}
+\fi
+
+\ifx\bibliocommand\undefined
+\else
+    \bibliographystyle{\bibliostyle}
+	\bibliocommand
+\fi
