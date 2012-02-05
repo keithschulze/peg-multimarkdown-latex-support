@@ -1,11 +1,9 @@
 % Bibliography
-\ifx\bibliostyle\undefined
-\else
-    \def\bibliostyle{plain}
-\fi
-
 \ifx\bibliocommand\undefined
 \else
-    \bibliographystyle{\bibliostyle}
+    \ifx\bibliographystyle\undefined
+    \else
+        \bibliographystyle{plain}
+    \fi
 	\bibliocommand
 \fi
