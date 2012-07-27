@@ -1,0 +1,41 @@
+%
+%    Get ready for the actual document
+%
+
+\usepackage[
+  plainpages=false,
+	pdfpagelabels,
+	pdftitle={\mytitle},
+	pagebackref,
+	pdfauthor={\myauthor},
+	pdfkeywords={\keywords}
+	]{hyperref}
+\usepackage{memhfixc}
+
+
+\input{mmd-title}
+\title{\mytitle}
+\author{\myauthor}
+
+
+\begin{document}
+
+\frontmatter
+
+%% Titlepage
+
+%% Front Matter (Copyright and originality etc.)
+
+%% Dedication
+
+%% Acknowledgements
+
+%% Abstract
+
+%% Table of contents, figures and tables
+\tableofcontents
+
+\listoffigures
+\listoftables
+
+\mainmatter

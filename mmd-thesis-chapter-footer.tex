@@ -1,9 +1,17 @@
+%\renewcommand{\setspacing{single}}
+
+\cleardoublepage
+
 % Bibliography
-
-\renewcommand{\bibfont}{\singlespacing}
-
 \ifx\bibliocommand\undefined
 \else
+  \ifx\bibliostyle\undefined
+    \bibliographystyle{plain}
+    \bibliocommand
+  \else
     \bibliographystyle{\bibliostyle}
-	\bibliocommand
+  	\bibliocommand
+  \fi
 \fi
+
+%\renewcommand{\setmainmatterspacing{single}}

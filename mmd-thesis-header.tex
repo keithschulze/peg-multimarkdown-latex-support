@@ -4,7 +4,11 @@
 \ifx\docclass\undefined
     \documentclass[11pt, a4paper]{memoir}
 \else
-    \documentclass[\docoptions]{\docclass}
+    \ifx\docoptions\undefined
+      \documentclass{\docclass}
+    \else
+      \documentclass[\docoptions]{\docclass}
+    \fi
 \fi
 
 %%

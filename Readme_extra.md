@@ -1,0 +1,3 @@
+In addition to the default multimarkdown metadata in [peg-multimarkdown], I've added a couple more in order to both simplify and allow more customisation for thesis type latex docs. These are `Doc Class` and `Doc Options` which allow you to specify the document type and options for the latex file (i.e.\documentclass[docoptions]{docclass}).
+
+[peg-multimarkdown]:https://github.com/fletcher/peg-multimarkdown 
